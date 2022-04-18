@@ -83,30 +83,3 @@ window.addEventListener("scroll", () => {
     lastScrollY = window.scrollY
 });
 
-
-// Função mouseOn-imagem
-
-
-class ImgService {
-    constructor(serviceImg, divMsg) {
-        this.serviceImg = document.querySelector(serviceImg);
-        this.divMsg = document.querySelector(divMsg)
-    }
-    mouseOn() {
-        this.serviceImg.addEventListener('mouseover',() => {
-            this.divMsg.classList.add('msg-serv')
-        });
-    }
-    mouseOut() {
-        this.serviceImg.addEventListener('mouseout',()=>{
-            this.divMsg.classList.remove('msg-serv')
-        })
-    }
-}
-
-const imgWinch = new ImgService('#img-guincho','.msg-guincho');
-const imgTruck = new ImgService('#img-caminhao','.msg-caminhao');
-imgWinch.mouseOn();
-imgWinch.mouseOut()
-imgTruck.mouseOn();
-imgTruck.mouseOut()

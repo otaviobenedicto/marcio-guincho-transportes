@@ -96,6 +96,7 @@
   touch-action: pan-y; }
 
 .testimony-wrap {
+  cursor: grab;
   display: block;
   position: relative;
   padding: 30px 20px;
