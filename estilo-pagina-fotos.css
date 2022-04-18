@@ -24,16 +24,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-body{
-    background: url("_imagens/fundo-img-2.png") no-repeat center center fixed;
-    display:block;
-    background-size: cover;
-}
-
-a{
-    cursor: url("_imagens/cursor-pointer.png"), auto;
-}
 img{
     cursor: zoom-in;
 }
