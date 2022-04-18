@@ -1,0 +1,279 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+:root{
+    --fonteHind:'Hind Siliguri','Courier New', Courier, sans-serif;
+    --fonteMochy: 'Mochiy Pop P One', sans-serif;
+    --fonteTexto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --sizeTitle: 2.5em;
+    --shadowTitle: black 2px 2.5px 2px;
+    --padTitle: 65px;
+    --darkBlue: #164F73;
+    --lowDarkTitle: #2474A6;
+    --lightBlue: #79BED9;
+    --backColor:#d9d9d9e7;
+    --darkBackColor:#737373;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: url("_imagens/fundo-img-2.png") no-repeat center center fixed;
+    display:block;
+    background-size: cover;
+    cursor: url("_imagens/cursor.png"), auto;
+}
+
+a{
+    cursor: url("_imagens/cursor-pointer.png"), auto;
+}
+
+
+/* CABEÇALHO  */
+
+header div.div-menu{
+    background-image: linear-gradient(to left,var(--darkBlue),var(--lightBlue));
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 111;
+    transition: transform 1.0s;
+}
+header div.div-menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.1em;
+}
+header div.div-menu a:hover{
+    color: #0c0b0b;
+    font-size: 1.115em;
+}
+header > div.container-head nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9vh;
+}
+header ul.menu-superior{
+    list-style: none;
+    display: flex;
+    font-family: var(--fonteHind);
+}
+header ul.menu-superior > li{
+    letter-spacing: 2px;
+    margin-left: 32px;
+    padding-right: 10px;
+}
+header nav div.mobile-menu{
+    cursor: url("_imagens/cursor-pointer.png"), auto;
+    display: none;
+}
+header nav > #logo-jww{
+    margin: 0px 5px 0px -40px;
+}
+header nav div.mobile-menu > div{
+    width: 55px;
+    height: 5px;
+    background: #F2F2F2;
+    margin: 9px;
+    border-radius: 11px;
+    padding-right: 10px;
+    transition: 00.3s;
+}
+@media(max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    header nav > #logo-jww{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vh;
+    }
+    header .menu-superior{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vh;
+        height: 95vh;
+        background-image: linear-gradient(to bottom,var(--darkBlue),var(--lightBlue));
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transform: translateX(100%);
+        transition: transform 0.33s ease-in;
+    }
+    header .menu-superior > li{
+        margin-top: 37px;
+        margin-left: 0;
+        opacity: 0;
+    }
+    header nav div.mobile-menu{
+        display: block;
+    }
+}
+
+header .menu-superior.active{
+    transform: translateX(0);
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(90px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+header nav div.mobile-menu.active .line1{
+    transform: rotate(-45deg)translate(-8px, 8px);
+    background-color: #e4e4e4;
+}
+header nav div.mobile-menu.active .line2{
+    opacity: 0;
+}
+header nav div.mobile-menu.active .line3{
+    transform: rotate(45deg)translate(-10.5px, -12px);
+    background-color: #ecf3eb;
+}
+header div.div-menu .activeMenu{
+    color:rgb(15, 19, 22);
+    transition: 0.3s;
+}
+.nav--hidden{
+    transform: translateY(-90px);
+    box-shadow: none;
+}
+
+
+/*   HOME   */
+
+
+div#home-input{
+    width: 100%;
+    min-height: 60vh;
+}
+#metodo-busca{
+    text-indent: 10px;
+    width: 50%;
+    height: 40px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-style:double;
+    border-width: 6px;
+    font-family:var(--fonteHind);
+    font-size: 0.95em;
+    font-style: italic;
+    margin-bottom: 5%;
+}
+main > #home-input{
+    min-width: 500px;
+    max-width: 1200px;
+    margin: 20vh auto auto auto; 
+    color: #F2F2F2;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-family: var(--fonteMochy);
+    text-align: center;
+}
+input#botao-wpp-solicite{
+    width: 60vh;
+    height: 11vh;
+    border-radius: 20px;
+    border-style:ridge;
+    border-width: 4.5px;
+    border-color: honeydew;
+    background-color: #45c655;
+    color: honeydew;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+    text-decoration: none;
+    cursor: url("_imagens/cursor.png"),auto;
+    margin-top: 10%;
+}
+input#botao-wpp-solicite:hover{
+    background-color: honeydew;
+    color:#45c655;
+    width: 65vh;
+    height: 11.5vh;
+    transition-duration: 0.6s;
+}
+
+
+/* FORMULARIO  */
+
+section#cont-form .container-form{
+    background-image: url(galeria-fotos/foto-13-fundo.jpg);
+    border: #0c0b0b;
+    width: 100%;
+    height:90vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+section#cont-form .container-form > form{
+    background-color: var(--backColor);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    height:80vh;
+}
+section#cont-form .container-form > form > h2{
+    color: var(--lowDarkTitle);
+    text-shadow: black 0.8px 0.8px;
+}
+section#cont-form .container-form > form input,form textarea,form select{
+    border: 0;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    background: #F2F2F2;
+    font-size: 16px;
+}
+section#cont-form .container-form > form input,form select{
+    height: 12px;
+}
+section#cont-form .container-form > form button{
+    padding: 15px;
+    background: var(--lowDarkTitle);
+    color: #F2F2F2;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 25px;
+}
+section#cont-form .container-form .btns-form-area{
+    display: flex;
+}
+
+
+/*   RODAPÉ    */
+
+
+footer{
+    margin: 8.5px;
+    text-align: center;
+    background-color: #21587ab4;
+    margin:0px;
+    height: 50px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer > h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+}

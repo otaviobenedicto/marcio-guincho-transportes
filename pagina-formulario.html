@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-pagina-fomulario.css">
+
+    <title>Formulario de Serviços</title>
+
+<body>
+    <header id="header">
+        <div class="container-head">
+
+            <div class="div-menu">
+                <nav>
+                    <a href="html/pagina-principal.html" id="logo-jww"><img
+                            src="../Site Marcio Guinchos & Transportes/_imagens/guincho-logo-peq.png"
+                            alt="logo de uma empresa de guincho"></a>
+                    <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="menu-superior">
+                        <li><a class="links" href="#selecao-servico">Serviços</a></li>
+                        <li><a class="links" href="#sec-regioes">Regiões</a></li>
+                        <li><a class="links" href="#sobre-nos">Sobre Nos</></a></li>
+                        <li><a class="links" href="#sec-fotos">Fotos</a></li>
+                        <li><a class="links" href="#fale-conosco">Fale Conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!--  HOME  -->
+
+    <main>
+        <div id="home-input">
+            <input type="search" name="buscar-servico" id="metodo-busca" placeholder="Pesquisar..."><input type="button"
+                value="buscar" id="buscar">
+            <h1>Serviços de Guinchos e Transportes</h1>
+            <h2>24 Horas | 7 Dias por Semana</h2>
+            <p><strong>Veiculos a pronto atendimento.</strong></p>
+
+            <!--     Botão WPP     -->
+
+            <a href="http://wa.me/5511971181829" target="_blank" rel="noopener noreferrer" id="botao-wpp"><img
+                    src="_imagens/wpp-logo.png" alt="Marca para Contato WhatsApp"><input type="button"
+                    value="Solicite seu Orçamento" id="botao-wpp-solicite"></a>
+        </div>
+        <main>
+
+            <!--    FORMULÁRIO     -->
+
+            <section id="cont-form">
+
+                <div class="container-form">
+
+                    <form action="https://formsubmit.co/168e9b4c8663678d659013634696a7ca" method="POST">
+
+                        <h2>Diga-nos o que voce precisa. Que nos resolvemos!!</h2>
+                        <input type="text" placeholder="Nome" required id="name-form" required>
+                        <input type="tel" name="nome-cliente" id="tel-form" placeholder="XXXX-XXXX" required>
+                        <input type="email" name="e-mail" id="email-form" placeholder="E-Mail" required>
+
+                        <select name="Região" id="reg" required>Selecione a Região do Serviço
+                            <option>Selecione a Regiõa</option>
+                            <option value="grande-sp"> Grande São Paulo </option>
+                            <option value="interior"> Interior </option>
+                            <option value="litoral"> Litoral </option>
+                            <option value="outros"> Outros </option>
+                        </select>
+
+                        <textarea id="txt-client" cols="30" rows="13" placeholder="Diga o que voce precisa!"
+                            required></textarea>
+
+                        <div class="btns-form-area">
+                            <button type="submit" id="send-btn">Enviar</button>
+                            <button type="reset" id="clean-btn">Limpar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h4> Marcio Guinchos & Transportes - &copy;All Rights Reserved</h4>
+        </footer>
+        <script src="pagina-formulario.js"></script>
+</body>
+
+</html>
