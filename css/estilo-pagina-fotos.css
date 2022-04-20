@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 :root{
     --fonteHind:'Hind Siliguri','Courier New', Courier, sans-serif;
     --fonteMochy: 'Mochiy Pop P One', sans-serif;
@@ -14,7 +15,7 @@
     --darkBlue: #164F73;
     --lowDarkTitle: #2474A6;
     --lightBlue: #79BED9;
-    --backColor:#d9d9d9e7;
+    --backColor:#D9D9D9;
     --darkBackColor:#737373;
 }
 
@@ -24,16 +25,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-body{
-    background: url("_imagens/fundo-img-2.png") no-repeat center center fixed;
-    display:block;
-    background-size: cover;
-    cursor: url("_imagens/cursor.png"), auto;
-}
-
-a{
-    cursor: url("_imagens/cursor-pointer.png"), auto;
+img{
+    cursor: zoom-in;
 }
 
 
@@ -73,7 +66,7 @@ header ul.menu-superior > li{
     padding-right: 10px;
 }
 header nav div.mobile-menu{
-    cursor: url("_imagens/cursor-pointer.png"), auto;
+    cursor: pointer;
     display: none;
 }
 header nav > #logo-jww{
@@ -156,7 +149,7 @@ header div.div-menu .activeMenu{
 }
 
 
-/*   HOME   */
+/*    HOME     */
 
 
 div#home-input{
@@ -174,7 +167,7 @@ div#home-input{
     font-family:var(--fonteHind);
     font-size: 0.95em;
     font-style: italic;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 main > #home-input{
     min-width: 500px;
@@ -197,7 +190,6 @@ input#botao-wpp-solicite{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3em;
     text-decoration: none;
-    cursor: url("_imagens/cursor.png"),auto;
     margin-top: 10%;
 }
 input#botao-wpp-solicite:hover{
@@ -208,60 +200,21 @@ input#botao-wpp-solicite:hover{
     transition-duration: 0.6s;
 }
 
+/*  GALERIA DE FOTOS  */
 
-/* FORMULARIO  */
-
-section#cont-form .container-form{
-    background-image: url(galeria-fotos/foto-13-fundo.jpg);
-    border: #0c0b0b;
-    width: 100%;
-    height:90vh;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-section#cont-form .container-form > form{
+section.gallery{
     background-color: var(--backColor);
-    display: flex;
-    flex-direction: column;
-    padding: 2vw 4vw;
-    height:80vh;
-}
-section#cont-form .container-form > form > h2{
-    color: var(--lowDarkTitle);
-    text-shadow: black 0.8px 0.8px;
-}
-section#cont-form .container-form > form input,form textarea,form select{
-    border: 0;
-    margin: 10px 0px;
     padding: 20px;
-    outline: none;
-    background: #F2F2F2;
-    font-size: 16px;
 }
-section#cont-form .container-form > form input,form select{
-    height: 12px;
-}
-section#cont-form .container-form > form button{
+div.col-lg-4{
     padding: 15px;
-    background: var(--lowDarkTitle);
-    color: #F2F2F2;
-    font-size: 18px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    width: 150px;
-    margin: 20px auto 0;
-    border-radius: 25px;
+    margin: 10vh 0vh 1vh 0vh;
 }
-section#cont-form .container-form .btns-form-area{
-    display: flex;
+div.col-lg-4 img.w-100{
+    margin-bottom: 0;
 }
 
-
-/*   RODAPÉ    */
-
-
+/* RODAPÉ */
 footer{
     margin: 8.5px;
     text-align: center;
@@ -277,3 +230,6 @@ footer > h4{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.3em;
 }
+
+
+

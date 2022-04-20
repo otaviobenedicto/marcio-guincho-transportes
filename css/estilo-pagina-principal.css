@@ -14,7 +14,6 @@
     --backColor:#D9D9D9;
     --darkBackColor:#737373;
 }
-
 *{
     margin:0;
     padding:0;
@@ -23,7 +22,7 @@
 }
 
 body{
-    background: url("_imagens/fundo-img-2.png") no-repeat center center fixed;
+    background: url("../_imagens/fundo-img-2.png") no-repeat center center fixed;
 }
 /* CABEÇALHO  */
 
@@ -61,7 +60,6 @@ header ul.menu-superior > li{
     padding-right: 10px;
 }
 header nav div.mobile-menu{
-    cursor: url("_imagens/cursor-pointer.png"), auto;
     display: none;
 }
 header nav > #logo-jww{
@@ -185,7 +183,6 @@ input#botao-wpp-solicite{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3em;
     text-decoration: none;
-    cursor: url("_imagens/cursor.png"),auto;
     margin-top: 10%;
     cursor: pointer;
 }
