@@ -11,10 +11,9 @@
     --darkBlue: #164F73;
     --lowDarkTitle: #2474A6;
     --lightBlue: #79BED9;
-    --backColor:#d9d9d9e7;
+    --backColor:#D9D9D9;
     --darkBackColor:#737373;
 }
-
 *{
     margin:0;
     padding:0;
@@ -24,15 +23,7 @@
 
 body{
     background: url("../_imagens/fundo-img-2.png") no-repeat center center fixed;
-    display:block;
-    background-size: cover;
 }
-
-a{
-    cursor: pointer;
-}
-
-
 /* CABEÇALHO  */
 
 header div.div-menu{
@@ -69,7 +60,6 @@ header ul.menu-superior > li{
     padding-right: 10px;
 }
 header nav div.mobile-menu{
-    cursor: pointer;
     display: none;
 }
 header nav > #logo-jww{
@@ -152,27 +142,37 @@ header div.div-menu .activeMenu{
 }
 
 
-/*   HOME   */
+/*    HOME     */
 
 
 div#home-input{
     width: 100%;
-    min-height: 60vh;
+    min-height: 70vh;
 }
 #metodo-busca{
     text-indent: 10px;
     width: 50%;
-    height: 40px;
-    border-bottom-right-radius: 12px;
+    height: 42px;
     border-bottom-left-radius: 12px;
-    border-style:double;
-    border-width: 6px;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-left-style: double;
+    border-right-style: none;
+    border-width: 3px;
     font-family:var(--fonteHind);
     font-size: 0.95em;
     font-style: italic;
     margin-bottom: 5%;
 }
-main > #home-input{
+ div#home-input button{
+    border-bottom-right-radius: 15px;
+    height: 43.5px;
+    width: 120px;
+    border: ridge 1px black;
+    text-shadow: var(--shadowTitle)
+}
+.btn-search{color:#fff;background-color:var(--lowDarkTitle);border-color:var(--lowDarkTitle)}.btn-search:hover{color:#fff;background-color:var(--darkBlue);border-color:var(--lowDarkTitle)}.btn-search.focus,.btn-search:focus{box-shadow:0 0 0 .2rem var(--lightBlue)}.btn-search.disabled,.btn-search:disabled{color:#fff;background-color:var(--lowDarkTitle);border-color:#2474A6}
+ #home-input{
     min-width: 500px;
     max-width: 1200px;
     margin: 20vh auto auto auto; 
@@ -190,10 +190,11 @@ input#botao-wpp-solicite{
     border-color: honeydew;
     background-color: #45c655;
     color: honeydew;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 1.3em;
     text-decoration: none;
-    margin-top: 10%;
+    margin-top: 7%;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 input#botao-wpp-solicite:hover{
     background-color: honeydew;

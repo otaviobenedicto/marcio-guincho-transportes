@@ -25,10 +25,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-img{
+section.gallery img{
     cursor: zoom-in;
 }
-
+body{
+    background: url("../_imagens/fundo-img-3.png") no-repeat center center fixed;
+}
 
 /* CABEÇALHO  */
 
@@ -159,7 +161,6 @@ div#home-input{
 #metodo-busca{
     text-indent: 10px;
     width: 50%;
-    height: 40px;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
     border-style:double;
@@ -167,7 +168,6 @@ div#home-input{
     font-family:var(--fonteHind);
     font-size: 0.95em;
     font-style: italic;
-    margin-bottom: 1%;
 }
 main > #home-input{
     min-width: 500px;
@@ -203,8 +203,9 @@ input#botao-wpp-solicite:hover{
 /*  GALERIA DE FOTOS  */
 
 section.gallery{
-    background-color: var(--backColor);
-    padding: 20px;
+    background-color:rgba(245, 245, 245, 0.822);
+    padding: 15px;
+    border: ridge 0.2px black;
 }
 div.col-lg-4{
     padding: 15px;
@@ -231,5 +232,6 @@ footer > h4{
     font-size: 1.3em;
 }
 
+.container-fluid-gallery{width:90%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
 
 
