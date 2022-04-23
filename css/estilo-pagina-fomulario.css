@@ -22,7 +22,7 @@
 }
 
 body{
-    background: url("../_imagens/fundo-img-2.png") no-repeat center center fixed;
+    background: url("../_imagens/fundo-img-3.png") no-repeat center center fixed;
 }
 /* CABEÇALHO  */
 
@@ -146,36 +146,13 @@ header div.div-menu .activeMenu{
 
 
 div#home-input{
-    width: 100%;
-    min-height: 70vh;
-}
-#metodo-busca{
-    text-indent: 10px;
-    width: 50%;
-    height: 42px;
-    border-bottom-left-radius: 12px;
-    border-top-style: double;
-    border-bottom-style: double;
-    border-left-style: double;
-    border-right-style: none;
-    border-width: 3px;
-    font-family:var(--fonteHind);
-    font-size: 0.95em;
-    font-style: italic;
-    margin-bottom: 5%;
-}
- div#home-input button{
-    border-bottom-right-radius: 15px;
-    height: 43.5px;
-    width: 120px;
-    border: ridge 1px black;
-    text-shadow: var(--shadowTitle)
+    min-height: 50vh;
 }
 .btn-search{color:#fff;background-color:var(--lowDarkTitle);border-color:var(--lowDarkTitle)}.btn-search:hover{color:#fff;background-color:var(--darkBlue);border-color:var(--lowDarkTitle)}.btn-search.focus,.btn-search:focus{box-shadow:0 0 0 .2rem var(--lightBlue)}.btn-search.disabled,.btn-search:disabled{color:#fff;background-color:var(--lowDarkTitle);border-color:#2474A6}
  #home-input{
     min-width: 500px;
     max-width: 1200px;
-    margin: 20vh auto auto auto; 
+    margin: 17vh auto auto auto; 
     color: #F2F2F2;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     font-family: var(--fonteMochy);
@@ -192,23 +169,21 @@ input#botao-wpp-solicite{
     color: honeydew;
     font-size: 1.3em;
     text-decoration: none;
-    margin-top: 7%;
     cursor: pointer;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 input#botao-wpp-solicite:hover{
     background-color: honeydew;
     color:#45c655;
-    width: 65vh;
-    height: 11.5vh;
-    transition-duration: 0.6s;
+    width: 61vh;
+    height: 11vh;
+    transition-duration: 0.8s;
 }
 
 
 /* FORMULARIO  */
 
 section#cont-form .container-form{
-    background: url("../galeria-fotos/foto-13-fundo.jpg");
     border: #0c0b0b;
     width: 100%;
     height:90vh;
@@ -237,18 +212,6 @@ section#cont-form .container-form > form input,form textarea,form select{
 }
 section#cont-form .container-form > form input,form select{
     height: 12px;
-}
-section#cont-form .container-form > form button{
-    padding: 15px;
-    background: var(--lowDarkTitle);
-    color: #F2F2F2;
-    font-size: 18px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    width: 150px;
-    margin: 20px auto 0;
-    border-radius: 25px;
 }
 section#cont-form .container-form .btns-form-area{
     display: flex;

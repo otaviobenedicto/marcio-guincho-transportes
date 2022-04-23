@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
-:root{
-    --fonteHind:'Hind Siliguri','Courier New', Courier, sans-serif;
+:root {
+    --fonteHind: 'Hind Siliguri', 'Courier New', Courier, sans-serif;
     --fonteMochy: 'Mochiy Pop P One', sans-serif;
     --fonteTexto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --sizeTitle: 2.5em;
@@ -15,66 +15,76 @@
     --darkBlue: #164F73;
     --lowDarkTitle: #2474A6;
     --lightBlue: #79BED9;
-    --backColor:#D9D9D9;
-    --darkBackColor:#737373;
+    --backColor: #D9D9D9;
+    --darkBackColor: #737373;
 }
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-section.gallery img{
+
+section.gallery img {
     cursor: zoom-in;
 }
-body{
-    background: url("../_imagens/fundo-img-3.png") no-repeat center center fixed;
+
+body {
+    background: url("../_imagens/fundo-img-3.png") no-repeat center center fixed
 }
 
 /* CABEÇALHO  */
 
-header div.div-menu{
-    background-image: linear-gradient(to left,var(--darkBlue),var(--lightBlue));
+header div.div-menu {
+    background-image: linear-gradient(to left, var(--darkBlue), var(--lightBlue));
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 111;
     transition: transform 1.0s;
 }
-header div.div-menu a{
+
+header div.div-menu a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 1.1em;
 }
-header div.div-menu a:hover{
+
+header div.div-menu a:hover {
     color: #0c0b0b;
-    font-size: 1.115em;
+    font-size: 1.11em;
 }
-header > div.container-head nav{
+
+header>div.container-head nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 9vh;
 }
-header ul.menu-superior{
+
+header ul.menu-superior {
     list-style: none;
     display: flex;
     font-family: var(--fonteHind);
 }
-header ul.menu-superior > li{
+
+header ul.menu-superior>li {
     letter-spacing: 2px;
     margin-left: 32px;
     padding-right: 10px;
 }
-header nav div.mobile-menu{
+
+header nav div.mobile-menu {
     cursor: pointer;
     display: none;
 }
-header nav > #logo-jww{
+
+header nav>#logo-jww {
     margin: 0px 5px 0px -40px;
 }
-header nav div.mobile-menu > div{
+
+header nav div.mobile-menu>div {
     width: 55px;
     height: 5px;
     background: #F2F2F2;
@@ -83,69 +93,80 @@ header nav div.mobile-menu > div{
     padding-right: 10px;
     transition: 00.3s;
 }
-@media(max-width: 999px){
-    body{
+
+@media(max-width: 999px) {
+    body {
         overflow-x: hidden;
     }
-    header nav > #logo-jww{
+
+    header nav>#logo-jww {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50vh;
     }
-    header .menu-superior{
+
+    header .menu-superior {
         position: absolute;
         top: 8vh;
         right: 0;
         width: 50vh;
         height: 95vh;
-        background-image: linear-gradient(to bottom,var(--darkBlue),var(--lightBlue));
+        background-image: linear-gradient(to bottom, var(--darkBlue), var(--lightBlue));
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         transform: translateX(100%);
         transition: transform 0.33s ease-in;
     }
-    header .menu-superior > li{
+
+    header .menu-superior>li {
         margin-top: 37px;
         margin-left: 0;
         opacity: 0;
     }
-    header nav div.mobile-menu{
+
+    header nav div.mobile-menu {
         display: block;
     }
 }
 
-header .menu-superior.active{
+header .menu-superior.active {
     transform: translateX(0);
 }
+
 @keyframes navLinkFade {
-    from{
+    from {
         opacity: 0;
         transform: translateX(90px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-header nav div.mobile-menu.active .line1{
+header nav div.mobile-menu.active .line1 {
     transform: rotate(-45deg)translate(-8px, 8px);
     background-color: #e4e4e4;
 }
-header nav div.mobile-menu.active .line2{
+
+header nav div.mobile-menu.active .line2 {
     opacity: 0;
 }
-header nav div.mobile-menu.active .line3{
+
+header nav div.mobile-menu.active .line3 {
     transform: rotate(45deg)translate(-10.5px, -12px);
     background-color: #ecf3eb;
 }
-header div.div-menu .activeMenu{
-    color:rgb(15, 19, 22);
+
+header div.div-menu .activeMenu {
+    color: rgb(15, 19, 22);
     transition: 0.3s;
 }
-.nav--hidden{
+
+.nav--hidden {
     transform: translateY(-90px);
     box-shadow: none;
 }
@@ -154,35 +175,38 @@ header div.div-menu .activeMenu{
 /*    HOME     */
 
 
-div#home-input{
+div#home-input {
     width: 100%;
     min-height: 60vh;
 }
-#metodo-busca{
+
+#metodo-busca {
     text-indent: 10px;
     width: 50%;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
-    border-style:double;
+    border-style: double;
     border-width: 6px;
-    font-family:var(--fonteHind);
+    font-family: var(--fonteHind);
     font-size: 0.95em;
     font-style: italic;
 }
-main > #home-input{
+
+main>#home-input {
     min-width: 500px;
     max-width: 1200px;
-    margin: 20vh auto auto auto; 
+    margin: 20vh auto auto auto;
     color: #F2F2F2;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     font-family: var(--fonteMochy);
     text-align: center;
 }
-input#botao-wpp-solicite{
+
+input#botao-wpp-solicite {
     width: 60vh;
     height: 11vh;
     border-radius: 20px;
-    border-style:ridge;
+    border-style: ridge;
     border-width: 4.5px;
     border-color: honeydew;
     background-color: #45c655;
@@ -192,9 +216,10 @@ input#botao-wpp-solicite{
     text-decoration: none;
     margin-top: 10%;
 }
-input#botao-wpp-solicite:hover{
+
+input#botao-wpp-solicite:hover {
     background-color: honeydew;
-    color:#45c655;
+    color: #45c655;
     width: 65vh;
     height: 11.5vh;
     transition-duration: 0.6s;
@@ -203,35 +228,32 @@ input#botao-wpp-solicite:hover{
 /*  GALERIA DE FOTOS  */
 
 section.gallery{
-    background-color:rgba(245, 245, 245, 0.822);
-    padding: 15px;
-    border: ridge 0.2px black;
+    margin-top: 35px;
+    background-color: #f1eaea;
 }
-div.col-lg-4{
-    padding: 15px;
-    margin: 10vh 0vh 1vh 0vh;
+div.row{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
 }
-div.col-lg-4 img.w-100{
-    margin-bottom: 0;
+.item{
+    transition: 0.4s ease-in-out;
+}
+.item:hover{
+    filter: brightness(80%);
 }
 
 /* RODAPÉ */
-footer{
-    margin: 8.5px;
+
+footer {
     text-align: center;
-    background-color: #21587ab4;
-    margin:0px;
+    background-color: #2474a6b4;
     height: 50px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
-footer > h4{
+
+footer>h4 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.3em;
 }
-
-.container-fluid-gallery{width:90%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
-
-
