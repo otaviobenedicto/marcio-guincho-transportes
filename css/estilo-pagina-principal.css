@@ -40,7 +40,7 @@ header div.div-menu a{
 }
 header div.div-menu a:hover{
     color: #0c0b0b;
-    font-size: 1.115em;
+    font-size: 1.11em;
 }
 header > div.container-head nav{
     display: flex;
@@ -146,7 +146,7 @@ header div.div-menu .activeMenu{
 
 div#home-input{
     width: 100%;
-    min-height: 80vh;
+    min-height: 70vh;
 }
 #metodo-busca{
     text-indent: 10px;
@@ -202,14 +202,11 @@ input#botao-wpp-solicite:hover{
     height: 11.5vh;
     transition-duration: 0.6s;
 }
-
-
 /*     SELEÇÃO SERVIÇO    */
-
 
 section#selecao-servico{
     background-color: #111111d3;
-    min-height: 80vh;
+    min-height: 75vh;
     padding-bottom: 100px;
 }
 section#selecao-servico h2{
@@ -219,21 +216,27 @@ section#selecao-servico h2{
     font-size: var(--sizeTitle);
     color:var(--darkBlue);
     text-align: center;
-    padding-top: 90px;
+    padding-top: 55px;
 }
 section#selecao-servico h4{
     font-family: var(--fonteMochy);
     color: #F2F2F2;
     text-align: center;
     padding: 40px 100px 0px 100px;
-    
 }
 div.service-sec{
     display: flex;
+    justify-content: space-evenly;
 }
 div.service-sec img{
     margin-top: 15px;
 }
+/* TOLLTIP */
+div.service-sec > div.tool{
+    background-color: #45c655;
+
+}
+
 
 /*    REGIÔES      */ 
 
@@ -241,59 +244,39 @@ div.service-sec img{
 #sec-regioes{
     background-color: rgb(233, 233, 233);
     width: 100%;
-    min-height: 100vh;
+    min-height: auto;
     min-width: auto;
     color: #F2F2F2;
-    text-shadow: var(--shadowTitle);
     font-family: var(--fonteMochy);
     padding-bottom: 52px;
 }
-#sec-regioes ul#lista-regioes-1{
-    columns: 2;
-    text-indent: 20px;
-    font-size: 0.75em;
-    text-decoration: none;
-    color: #F2F2F2;
-    display: list-item;
-    list-style-type: none;
-}
-#sec-regioes h1{
-    padding-top:var(--padTitle);
+#sec-regioes h1 {
+    padding-top: var(--padTitle);
     font-size: var(--sizeTitle);
     text-align: center;
     text-shadow: var(--shadowTitle);
-    color:var(--darkBlue);
-    text-shadow: var(--shadowTitle ) ;
+    color: var(--darkBlue);
+    text-shadow: var(--shadowTitle );
 }
-#sec-regioes h2{
+#sec-regioes h2 {
+    text-shadow: var(--shadowTitle);
     text-align: center;
     background-image: linear-gradient(to left, grey,rgb(214, 214, 214));
-    margin: 15px 0px;
 }
-#sec-regioes ul#lista-regioes-1 > li{
-    margin: 0.6em;
-    width: 50vh;
+section#sec-regioes h5{
+    color: #0c0b0b;
 }
-#sec-regioes ul#lista-regioes-1 > li a{
-    color: #111111;
-    text-shadow: none;
-    text-indent: 1em;
+section#sec-regioes div.container div.container-fluid ul.list-region li{
+    text-shadow: var(--shadowTitle);
+    list-style-type: none;
+}
+section#sec-regioes div.container div.container-fluid ul.list-region li > a{
+    color: #F2F2F2;
+}
+section#sec-regioes div.container div.container-fluid ul.list-region li > a:hover{
     text-decoration: none;
+    text-shadow: black 3px 3.5px 3px;
 }
-#sec-regioes ul#lista-regioes-1 > li a:hover{
-    font-size: 1em;
-    color: var(--lightBlue);
-    transition-duration: 0.12s;
-}
-#sec-regioes > div#lista-setor-regioes{
-    display:flex;
-    padding: 15px 40px;
-}
-#sec-regioes img{
-    position: relative;
-    margin-top: -10px;
-}
-
 
 /*    SOBRE NÓS    */ 
 

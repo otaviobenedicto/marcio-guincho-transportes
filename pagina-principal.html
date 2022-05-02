@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <!--  CABEÇALHO    -->
 
     <header id="header">
@@ -42,6 +41,7 @@
             </div>
         </div>
     </header>
+
 
 
     <!--  HOME  -->
@@ -71,13 +71,13 @@
 
             <div class="service-sec">
 
-                <a class="mx-lg-auto" href="http://" target="_self"><img src="_imagens/img-guinchoService.png"
-                        alt="seleção serviço de guincho" id="img-guincho"></a>
+                <div class="toll" data-tooltip="mousein"><a class="mx-lg-auto" href="http://" target="_self"><img
+                            src="./_imagens/guincho.png" alt="seleção serviço de guincho" id="img-guincho"></a></div>
 
 
-
-                <a class="mx-lg-auto" href="http://" target="_self"><img src="_imagens/caminhão.png"
-                        alt="seleção serviço de transporte de carga" id="img-caminhao"></a>
+                <div class="toll" data-tooltip="mousein"><a class="mx-lg-auto" href="http://" target="_self"
+                        data-tooltip="mousein"><img src="_imagens/caminhão.png"
+                            alt="seleção serviço de transporte de carga" id="img-caminhao"></a></div>
             </div>
         </section>
 
@@ -85,61 +85,73 @@
         <!--   REGIÔES   -->
 
         <section id="sec-regioes">
-            <h1>REGIÕES</h1>
+            <h1>REGIÔES</h1>
             <h2>Areas Atendidas</h2>
-            <div class="lista-setor-regioes">
-                <ul id="lista-regioes-1">
-                    <a href="">
-                        <li>São Paulo - Capital
-                    </a></li>
-                    <li><a href="">Arujá</a></li>
-                    <li><a href="">Barueri</a></li>
-                    <li><a href="">Biritiba Mirim</a></li>
-                    <li><a href="">Caieiras</a> </li>
-                    <li><a href="">Cajamar</a></li>
-                    <li><a href="">Carapicuíba</a></li>
-                    <li><a href="">Cotia</a></li>
-                    <li><a href="">Diadema</a> </li>
-                    <li><a href="">Embu</a> </li>
-                    <li><a href="">Embu-Guaçu</a></li>
-                    <li><a href="">Ferraz de Vasconcelos</a></li>
-                    <li><a href="">Francisco Morato</a></li>
-                    <li><a href="">Franco da Rocha</a></li>
-                    <li><a href="">Guararema</a></li>
-                    <li><a href="">Guarulhos</a></li>
-                    <li><a href="">Itapecerica da Serra</a></li>
-                    <li><a href="">Itapevi</a></li>
-                    <li><a href="">Itaquaquecetuba</a></li>
-                    <li><a href="">Jandira</a></li>
-                    <li><a href="">Juquitiba</a></li>
-                    <li><a href="">Mairiporã</a></li>
-                    <li><a href="">Mauá</a></li>
-                    <li><a href="">Mogi das Cruzes</a></li>
-                    <li><a href="">Osasco</a></li>
-                    <li><a href="">Pirapora do Bom Jesus</a></li>
-                    <li><a href="">Poá</a></li>
-                    <li><a href="">Ribeirão Pires</a></li>
-                    <li><a href="">Rio Grande da Serra</a></li>
-                    <li><a href="">Salesópolis</a></li>
-                    <li><a href="">Santa Isabel</a></li>
-                    <li><a href="">Santana do Parnaíba</a></li>
-                    <li><a href="">Santo André</a></li>
-                    <li><a href="">São Bernardo do Campo</a></li>
-                    <li><a href="">São Caetano do Sul</a></li>
-                    <li><a href="">São Lourenço da Serra Suzano</a></li>
-                    <li><a href="">Suzano</a></li>
-                    <li><a href="">Taboão da Serra</a></li>
-                    <li><a href="">Vargem Grande Paulista</a></li>
-                </ul>
-                <div class="lista-setor-regioes">
-
-                    <!-- <img src="_imagens/mapa-estado-sao-paulo-microrregioes.png" alt="Imagem das Micro-Regiões dA Grande São Paulo"> -->
-
+            <div class="container d-flex">
+                <div class="container-fluid">
+                    <ul class="list-region">
+                        <h5>Zona Leste</h5>
+                        <li><a href="">Arujá</a></li>
+                        <li><a href="">Barueri</a></li>
+                        <li><a href="">Biritiba Mirim</a></li>
+                        <li><a href="">Caieiras</a> </li>
+                        <li><a href="">Cajamar</a></li>
+                        <li><a href="">Carapicuíba</a></li>
+                        <li><a href="">Cotia</a></li>
+                        <li><a href="">Diadema</a> </li>
+                        <li><a href="">Embu</a> </li>
+                        <li><a href="">Embu-Guaçu</a></li>
+                        <li><a href="">Ferraz de Vasconcelos</a></li>
+                        <li><a href="">Francisco Morato</a></li>
+                    </ul>
                 </div>
-            </div>
+                <div class="container-fluid">
+                    <ul class="list-region">
+                        <h5>Zona Oeste</h5>
+                        <li><a href="">Franco da Rocha</a></li>
+                        <li><a href="">Guararema</a></li>
+                        <li><a href="">Guarulhos</a></li>
+                        <li><a href="">Itapecerica da Serra</a></li>
+                        <li><a href="">Itapevi</a></li>
+                        <li><a href="">Itaquaquecetuba</a></li>
+                        <li><a href="">Jandira</a></li>
+                        <li><a href="">Juquitiba</a></li>
+                        <li><a href="">Mairiporã</a></li>
+                        <li><a href="">Mauá</a></li>
+                    </ul>
+                </div>
+                <div class="container-fluid">
+                    <ul class="list-region">
+                        <h5>Zona Norte</h5>
+                        <li><a href="">Mogi das Cruzes</a></li>
+                        <li><a href="">Osasco</a></li>
+                        <li><a href="">Pirapora do Bom Jesus</a></li>
+                        <li><a href="">Poá</a></li>
+                        <li><a href="">Ribeirão Pires</a></li>
+                    </ul>
+                </div>
+                <div class="container-fluid">
+                    <ul class="list-region">
+                        <h5>Zona Sul</h5>
+                        <li><a href="">Rio Grande da Serra</a></li>
+                        <li><a href="">Salesópolis</a></li>
+                        <li><a href="">Santa Isabel</a></li>
+                        <li><a href="">Santana do Parnaíba</a></li>
+                        <li><a href="">Santo André</a></li>
+                        <li><a href="">São Bernardo do Campo</a></li>
+                        <li><a href="">São Caetano do Sul</a></li>
+                        <li><a href="">São Lourenço da Serra</a></li>
+                        <li><a href="">Suzano</a></li>
+                        <li><a href="">Suzano</a></li>
+                        <li><a href="">Taboão da Serra</a></li>
+                        <li><a href="">Vargem Grande Paulista</a></li>
+                    </ul>
+                </div>
+
         </section>
 
         <!--SOBRE NOS -->
+
 
         <section id="sobre-nos" class=" w-100">
 
@@ -319,11 +331,12 @@
                     id="logo-insta"><img class=" img-fluid" src="_imagens/instagram-logo.png" alt="Logo Instragram"></a>
 
                 <a href="http://https://www.facebook.com/otavio.benedicto.9" target="_blank" rel="noopener noreferrer"
-                    id="logo-face"><img <img class=" img-fluid" src="_imagens/logo-facebook.png" alt="Logo Facebook"></a>
+                    id="logo-face"><img <img class=" img-fluid" src="_imagens/logo-facebook.png"
+                        alt="Logo Facebook"></a>
 
                 <a href="http://https://www.youtube.com/channel/UC36LiZkxLo7dmRm5QMOSIRQ" target="_blank"
-                    rel="noopener noreferrer" id="logo-youtube"><img <img class=" img-fluid" src="_imagens/youtube-logo.png"
-                        alt="Logo Youtube"></a>
+                    rel="noopener noreferrer" id="logo-youtube"><img <img class=" img-fluid"
+                        src="_imagens/youtube-logo.png" alt="Logo Youtube"></a>
             </div>
         </section>
 
@@ -335,6 +348,13 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="../Site Marcio Guinchos & Transportes/js/codigo-pagina-principal.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('button.col-11').click(function () {
+                $('div#area-btn-zone').toggleClass('d-none')
+            });
+        });
+    </script>
 </body>
 
 </html>
