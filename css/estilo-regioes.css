@@ -20,10 +20,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body{margin-top:20px;background: url("../_imagens/fundo-img-3.png") no-repeat center center fixed}
 
-body{
-    background: url("../_imagens/fundo-img-3.png") no-repeat center center fixed;
-}
+
 /* CABEÇALHO  */
 
 header div.div-menu{
@@ -142,4 +141,120 @@ header div.div-menu .activeMenu{
 }
 a#strong-form{
     color: #0c0b0b;
+}
+
+/*    HOME     */
+
+div#home-input{
+    min-height: 45vh;
+}
+.btn-search{color:#fff;background-color:var(--lowDarkTitle);border-color:var(--lowDarkTitle)}.btn-search:hover{color:#fff;background-color:var(--darkBlue);border-color:var(--lowDarkTitle)}.btn-search.focus,.btn-search:focus{box-shadow:0 0 0 .2rem var(--lightBlue)}.btn-search.disabled,.btn-search:disabled{color:#fff;background-color:var(--lowDarkTitle);border-color:#2474A6}
+ 
+#home-input{
+    min-width: 500px;
+    max-width: 1200px;
+    margin: 17vh auto auto auto; 
+    color: #F2F2F2;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-family: var(--fonteMochy);
+    text-align: center;
+}
+input#botao-wpp-solicite{
+    width: 60vh;
+    height: 11vh;
+    border-radius: 20px;
+    border-style:ridge;
+    border-width: 4.5px;
+    border-color: honeydew;
+    background-color: #45c655;
+    color: honeydew;
+    font-size: 1.3em;
+    text-decoration: none;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input#botao-wpp-solicite:hover{
+    background-color: honeydew;
+    color:#45c655;
+    width: 61vh;
+    height: 11vh;
+    transition-duration: 0.8s;
+}
+section#sec-region > img, figure {
+    max-width: 100%;
+}
+
+/* Sistema de Contato */
+
+section#sec-contato{
+    background-color:rgba(0, 0, 0, 0.788);
+    color: #fff;
+}
+section#sec-contato div.row{
+    padding: 15px;
+}
+section#sec-contato div.conteudo{
+    padding: 35px;
+}
+section#sec-contato div.header_contact{
+    padding: 30px ;
+}
+
+/* FALE CONOSCO */
+
+section#fale-conosco{
+    height: 64vh;
+    background-color: #5c809c;
+}
+section#fale-conosco > h1{
+    padding-top: 50px;
+    font-family:var(--fonteMochy);
+    font-size: var(--sizeTitle);
+    color: #0f486b;
+    text-align: center;
+    text-shadow: var(--shadowTitle);
+}
+section#fale-conosco a{
+    color: rgb(28, 28, 114);
+    font-size: 18px;
+    font-style: italic;
+}
+section#fale-conosco > .fale-conosco-div-ib{
+    display: inline-block;
+    align-self: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    height: 120px;
+    margin-left: 15%;
+}
+section#fale-conosco > .fale-conosco-div-ib h4{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 1.2em;
+    margin-top: 5%;
+    margin-bottom: 9px;
+}
+section#fale-conosco > #fale-conosco-cartao{
+    display: block;
+    margin: 30px auto 19px auto;
+    width: 45%;
+    padding: 10px;
+    border-radius: 25px;
+}
+section#fale-conosco > div#fale-conosco-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* RODAPÉ */
+
+footer{
+    background-color: #2474a6b4;
+    height: 50px;
+    text-align: center;
+}
+
+footer h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
 }

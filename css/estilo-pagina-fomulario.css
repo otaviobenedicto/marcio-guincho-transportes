@@ -144,15 +144,15 @@ a#strong-form{
     color: #0c0b0b;
 }
 
-
 /*    HOME     */
 
 
 div#home-input{
-    min-height: 56vh;
+    min-height: 50vh;
 }
 .btn-search{color:#fff;background-color:var(--lowDarkTitle);border-color:var(--lowDarkTitle)}.btn-search:hover{color:#fff;background-color:var(--darkBlue);border-color:var(--lowDarkTitle)}.btn-search.focus,.btn-search:focus{box-shadow:0 0 0 .2rem var(--lightBlue)}.btn-search.disabled,.btn-search:disabled{color:#fff;background-color:var(--lowDarkTitle);border-color:#2474A6}
- #home-input{
+ 
+#home-input{
     min-width: 500px;
     max-width: 1200px;
     margin: 17vh auto auto auto; 
