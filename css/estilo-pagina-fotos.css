@@ -242,6 +242,67 @@ div.row{
     filter: brightness(80%);
 }
 
+/* FALE CONOSCO */
+
+section#fale-conosco{
+    min-height: 64vh;
+    background-color: #5c809c;
+}
+section#fale-conosco > h1{
+    padding-top: 50px;
+    font-family:var(--fonteMochy);
+    font-size: var(--sizeTitle);
+    color: #0f486b;
+    text-align: center;
+    text-shadow: var(--shadowTitle);
+}
+section#fale-conosco a{
+    color: rgb(28, 28, 114);
+    font-size: 18px;
+    font-style: italic;
+}
+section#fale-conosco div.cont{
+    display: flex;
+    justify-content: space-around;
+}
+section#fale-conosco .fale-conosco-div-ib{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+}
+section#fale-conosco .fale-conosco-div-ib h4{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 1.2em;
+    margin-top: 5%;
+    margin-bottom: 9px;
+}
+section#fale-conosco > #fale-conosco-cartao{
+    display: block;
+    margin: 30px auto 19px auto;
+    width: 45%;
+    padding: 10px;
+    border-radius: 25px;
+}
+section#fale-conosco > div#fale-conosco-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 990px){
+    section#fale-conosco > div#fale-conosco-img img{
+        display: none;
+    }
+    section#fale-conosco div.cont{
+        text-align: center;
+        display: block;
+        margin: auto;
+        width: auto;
+        padding: 10px;
+    }
+    section#fale-conosco div#fale-conosco-info,div#fale-conosco-info-2{
+        vertical-align:middle;
+    }
+}
+
 /* RODAPÉ */
 
 footer {

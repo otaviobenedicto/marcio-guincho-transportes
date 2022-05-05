@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 :root{
     --fonteHind:'Hind Siliguri','Courier New', Courier, sans-serif;
     --fonteMochy: 'Mochiy Pop P One', sans-serif;
@@ -184,7 +186,7 @@ section#sec-region > img, figure {
     max-width: 100%;
 }
 
-/* Sistema de Contato */
+/* INTRODUÇÃO */
 
 section#sec-contato{
     background-color:rgba(0, 0, 0, 0.788);
@@ -203,7 +205,7 @@ section#sec-contato div.header_contact{
 /* FALE CONOSCO */
 
 section#fale-conosco{
-    height: 64vh;
+    min-height: 64vh;
     background-color: #5c809c;
 }
 section#fale-conosco > h1{
@@ -219,15 +221,15 @@ section#fale-conosco a{
     font-size: 18px;
     font-style: italic;
 }
-section#fale-conosco > .fale-conosco-div-ib{
-    display: inline-block;
-    align-self: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1em;
-    height: 120px;
-    margin-left: 15%;
+section#fale-conosco div.cont{
+    display: flex;
+    justify-content: space-around;
 }
-section#fale-conosco > .fale-conosco-div-ib h4{
+section#fale-conosco .fale-conosco-div-ib{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+}
+section#fale-conosco .fale-conosco-div-ib h4{
     font-family: 'Mochiy Pop P One', sans-serif;
     font-size: 1.2em;
     margin-top: 5%;
@@ -245,12 +247,27 @@ section#fale-conosco > div#fale-conosco-img {
     align-items: center;
     justify-content: center;
 }
+@media(max-width: 990px){
+    section#fale-conosco > div#fale-conosco-img img{
+        display: none;
+    }
+    section#fale-conosco div.cont{
+        text-align: center;
+        display: block;
+        margin: auto;
+        width: auto;
+        padding: 10px;
+    }
+    section#fale-conosco div#fale-conosco-info,div#fale-conosco-info-2{
+        vertical-align:middle;
+    }
+}
 
 /* RODAPÉ */
 
 footer{
+    min-height: 6vh;
     background-color: #2474a6b4;
-    height: 50px;
     text-align: center;
 }
 
