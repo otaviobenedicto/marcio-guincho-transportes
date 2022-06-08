@@ -48,7 +48,7 @@ header > div.container-head nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 9vh;
+    height: 10vh;
 }
 header ul.menu-superior{
     list-style: none;
@@ -149,7 +149,7 @@ a#strong-form{
 
 
 div#home-input{
-    min-height: 50vh;
+    min-height: 45vh;
 }
 .btn-search{color:#fff;background-color:var(--lowDarkTitle);border-color:var(--lowDarkTitle)}.btn-search:hover{color:#fff;background-color:var(--darkBlue);border-color:var(--lowDarkTitle)}.btn-search.focus,.btn-search:focus{box-shadow:0 0 0 .2rem var(--lightBlue)}.btn-search.disabled,.btn-search:disabled{color:#fff;background-color:var(--lowDarkTitle);border-color:#2474A6}
  
