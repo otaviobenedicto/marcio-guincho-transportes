@@ -42,7 +42,7 @@ const mobileNavBar = new MobileNavBar(
 
 mobileNavBar.init()
 
-//Evento Some Menu
+//Evento some menu
 
 const menu = document.querySelector(".div-menu");
 let lastScrollY = window.scrollY;
@@ -54,3 +54,4 @@ window.addEventListener("scroll", () => {
     };
     lastScrollY = window.scrollY
 });
+

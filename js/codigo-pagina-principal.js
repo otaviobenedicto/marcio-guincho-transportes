@@ -58,7 +58,7 @@ function activeMenu() {
 
     let len = sec.length;
 
-    while (--len && window.scrollY + 1000 < sec[len].offsetTop) { }
+    while (--len && window.scrollY + 500 < sec[len].offsetTop) { }
 
     li.forEach(ltx => ltx.classList.remove("activeMenu"));
 

@@ -80,10 +80,6 @@ header nav div.mobile-menu {
     display: none;
 }
 
-header nav>#logo-jww {
-    margin: 0px 5px 0px -40px;
-}
-
 header nav div.mobile-menu>div {
     width: 55px;
     height: 5px;
@@ -228,11 +224,11 @@ input#botao-wpp-solicite:hover {
 /*  GALERIA DE FOTOS  */
 
 section.gallery{
-    margin-top: 35px;
-    background-color: #f1eaea;
+    margin-top: 65px;
+    background-color: #f1eaeabd;
 }
 div.row{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(212, 212, 212, 0.637);
     padding: 10px;
 }
 .item{
