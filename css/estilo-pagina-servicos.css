@@ -231,6 +231,11 @@ main section#sec-servico #servicos-guincho{
 }
 main section#sec-servico #servicos-guincho img{
     margin: 5px 30px;
+    cursor: pointer;
+}
+main section#sec-servico #servicos-guincho img:hover{
+    background-color: var(--lightBlue);
+    border-radius: 19px;
 }
 
 main section#sec-servico h2.h2{
