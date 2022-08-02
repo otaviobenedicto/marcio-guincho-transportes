@@ -35,7 +35,6 @@ body {
 }
 
 /* CABEÇALHO  */
-
 header div.div-menu {
     background-image: linear-gradient(to left, var(--darkBlue), var(--lightBlue));
     position: fixed;
@@ -76,7 +75,6 @@ header ul.menu-superior>li {
 }
 
 header nav div.mobile-menu {
-    cursor: pointer;
     display: none;
 }
 
@@ -104,10 +102,10 @@ header nav div.mobile-menu>div {
 
     header .menu-superior {
         position: absolute;
-        top: 8vh;
+        top: 100%;
+        height: 50vh;
+        width: 30%;
         right: 0;
-        width: 50vh;
-        height: 95vh;
         background-image: linear-gradient(to bottom, var(--darkBlue), var(--lightBlue));
         flex-direction: column;
         align-items: center;
@@ -116,17 +114,14 @@ header nav div.mobile-menu>div {
         transition: transform 0.33s ease-in;
     }
 
-    header .menu-superior>li {
-        margin-top: 37px;
-        margin-left: 0;
-        opacity: 0;
+    header .menu-superior li {
+        padding: 10px;
     }
 
     header nav div.mobile-menu {
         display: block;
     }
 }
-
 header .menu-superior.active {
     transform: translateX(0);
 }
@@ -166,7 +161,6 @@ header div.div-menu .activeMenu {
     transform: translateY(-90px);
     box-shadow: none;
 }
-
 
 /*    HOME     */
 

@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Site Marcio Guinchos & Transportes//css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../Site Marcio Guinchos & Transportes/css/estilo-pagina-fomulario.css">
-    <link rel="shortcut icon" href="./_imagens/favicon_io/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/estilo-pagina-fomulario.css">
     <title>Formulario de Serviços</title>
+    <!--  CABEÇALHO    -->
 
-<body>
     <header id="header">
         <div class="container-head">
 
             <div class="div-menu">
                 <nav>
-                    <a href="../Site Marcio Guinchos & Transportes/pagina-principal.html" id="logo-jww"><img
-                            src="./_imagens/logo-guinchos&transportes.png" alt="logo de uma empresa de guincho"></a>
+                    <a href="./pagina-principal.html" id="logo-jww"><img src="./_imagens/logo-guinchos&transportes.png"
+                            alt="logo de uma empresa de guincho"></a>
                     <div class="mobile-menu">
                         <div class="line1"></div>
                         <div class="line2"></div>
@@ -25,16 +24,15 @@
                     </div>
                     <ul class="menu-superior">
                         <li><a class="links" href="./pagina-servicos.html">Serviços</a></li>
-                        <li><a class="links"
-                                href="../Site Marcio Guinchos & Transportes/pagina-regioes.html">Regiões</a></li>
-                        <li><a class="links" href="../Site Marcio Guinchos & Transportes/pagina-fotos.html">Fotos</a>
-                        </li>
-                        <li><a class="links text-dark" href="#fale-conosco">Fale Conosco</a></li>
+                        <li><a class="links" href="./pagina-regioes.html">Regiões</a></li>
+                        <li><a class="links" href="./pagina-fotos.html">Fotos</a></li>
+                        <li><a class="links" href="#sec-contato">Fale Conosco</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
 
 
     <!--  HOME  -->
@@ -47,9 +45,11 @@
 
             <!--     Botão WPP     -->
 
-            <a href="http://wa.me/5511971181829" target="_blank" rel="noopener noreferrer" id="botao-wpp"><img
-                    src="_imagens/wpp-logo.png" alt="Marca para Contato WhatsApp"><input type="button"
-                    value="Solicite seu Orçamento" id="botao-wpp-solicite"></a>
+            <button id="btn-wpp" style="width:50vh;height:10vh;">
+                <a href="http://wa.me/5511971181829" target="_blank" rel="noopener noreferrer" style="color:aliceblue;">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 1.6em;"></i>&nbsp;&nbsp;Solicite seu
+                    Orçamento</a>
+            </button>
         </div>
 
         <!-- INTRODUÇÃO -->
@@ -61,10 +61,11 @@
                         <small class="header"><span style="color:rgb(16, 104, 158)" class="h6">Marcio Guinchos &
                                 Transportes</span></small>
                         <h2>Fale Conosco</h2>
-                        <h2 style="color:rgb(174, 179, 182)" class="h3">11.97118-1829</h2>
+                        <h2 style="color:rgb(174, 179, 182)" class="h3">(11) 97118-1829</h2>
                     </div>
                     <div class="conteudo col-md-8 p-5">
-                        <h3 class="h4">Entre em contato que em breve retornamos a seu contato, por e-mail ou via WhatsApp.</h3>
+                        <h3 class="h4">Entre em contato que em breve retornamos a seu contato, por e-mail ou via
+                            WhatsApp.</h3>
                     </div>
                 </div>
             </div>
@@ -76,12 +77,11 @@
 
             <div class="container-form container">
 
-                <form  action="https://formspree.io/f/xvolykop" method="post" onsubmit="msgSend()">
+                <form>
                     <h2>Diga-nos o que voce precisa. Que nos resolvemos!</h2>
-                    <input type="text" name="fullName" placeholder="Nome" id="name-form" required>
-                    <input type="tel" name="telefone" id="tel-form" placeholder="XXXX-XXXX" required>
-                    <input type="email" name="e-mail" id="email-form" placeholder="E-Mail" required>
-
+                    <input type="text" name="fullName" placeholder="Nome*" id="name-form" required>
+                    <input type="tel" name="telefone" id="tel" placeholder="Telefone*" required>
+                    <input type="email" name="email_id" id="email_id" placeholder="E-Mail*" required>
                     <select name="Região" id="reg" required>
                         <option>Selecione a Região</option>
                         <option value="grande-sp"> Grande São Paulo </option>
@@ -106,11 +106,12 @@
 
 
 
-                    <textarea id="txt-client" name="Texto" cols="20" rows="10" placeholder="Diga o que voce precisa!"
+                    <textarea id="message" name="Texto" cols="20" rows="10" placeholder="Diga o que voce precisa!"
                         required></textarea>
 
                     <div class="btns-form-area">
-                        <button type="submit" id="send" class="btn btn-outline-primary p-3 w-25 m-3 btn-search">Enviar</button>
+                        <button type="submit" id="send"
+                            class="btn btn-outline-primary p-3 w-25 m-3 btn-search">Enviar</button>
                         <button type="reset" class="btn btn-outline-primary p-3 w-25 m-3 btn-search">Limpar</button>
                     </div>
                 </form>
@@ -159,11 +160,13 @@
         <h4> Marcio Guinchos & Transportes - &copy;All Rights Reserved</h4>
     </footer>
     <script src="js/jquery.min.js"></script>
-    <script src="../Site Marcio Guinchos & Transportes/js/pagina-formulario.js"></script>
-    <script>
-        function msgSend(){
-            window.alert('Mensagem Enviada!')
-        }
+    <script src="./js/pagina-formulario.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("xT2E5xXtkEhyoJB9O");
+        })();
     </script>
 </body>
 

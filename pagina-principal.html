@@ -6,24 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcio Guinchos & Transportes</title>
-    <link rel="stylesheet" href="../Site Marcio Guinchos & Transportes/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../Site Marcio Guinchos & Transportes/css/estilo-pagina-principal.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilo-pagina-principal.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./_imagens/favicon_io/favicon-16x16.png" type="image/x-icon">
 </head>
 
 <body>
+
     <!--  CABEÇALHO    -->
 
     <header id="header">
         <div class="container-head">
-
             <div class="div-menu">
                 <nav>
-                    <a href="../Site Marcio Guinchos & Transportes/pagina-principal.html" id="logo-jww"><img
-                        src="./_imagens/logo-guinchos&transportes.png" alt="logo de uma empresa de guincho"></a>
+                    <a href="./pagina-principal.html" id="logo-jww">
+                        <picture>
+                            <source media="(max-width:650px)" srcset="_imagens/logo-guinchos&transportes-132px.png">
+                            <source media="(max-width:465px)" srcset="_imagens/logo-guinchos&transportes-99px.png">
+                            <img src="./_imagens/logo-guinchos&transportes.png" alt="logo de uma empresa de guincho">
+                        </picture>
+                    </a>
                     <div class="mobile-menu">
                         <div class="line1"></div>
                         <div class="line2"></div>
@@ -34,30 +39,28 @@
                         <li><a class="links" href="#sec-regioes">Regiões</a></li>
                         <li><a class="links" href="#sobre-nos">Sobre Nos</></a></li>
                         <li><a class="links" href="#sec-fotos">Fotos</a></li>
-                        <li><a class="links" href="#fale-conosco">Fale Conosco</a></li>
+                        <li><a class="links" href="#fale-conosco">Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-
-
     <!--  HOME  -->
 
     <main>
         <div id="home-input">
-            <input type="search" name="buscar-servico" id="metodo-busca" placeholder="Pesquisar..."><button
-                class=" btn btn-search">Buscar</button>
             <h1>Serviços de Guinchos e Transportes</h1>
             <h2>24 Horas | 7 Dias por Semana</h2>
             <p><strong>Veiculos a pronto atendimento.</strong></p>
 
             <!--     Botão WPP     -->
 
-            <a href="http://wa.me/5511971181829" target="_blank" rel="noopener noreferrer" id="botao-wpp"><img
-                    src="_imagens/wpp-logo.png" alt="Marca para Contato WhatsApp"><input type="button"
-                    value="Solicite seu Orçamento" id="botao-wpp-solicite"></a>
+            <button id="btn-wpp">
+                <a href="http://wa.me/5511971181829" target="_blank" rel="noopener noreferrer" style="color:aliceblue;">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 1.6em;"></i>&nbsp;&nbsp;Solicite seu
+                    Orçamento</a>
+            </button>
         </div>
 
         <!--   Seleção Serviço -->
@@ -66,28 +69,34 @@
             <h2>SELECIONE O TIPO DE SERVIÇO</h2>
             <h4>ESCOLHA QUAL MODELO DE SERVIÇO IRA PRECISAR PARA FACILITAR O ORÇAMENTO, DISPONIILIZAMOS DIVERSOS
                 SERVIÇOS EM CADA CATEGORIAS.</h4>
-                
-
-
             <div class="service-sec">
-                
-
-                <div>
-                    <a class="mx-lg-auto" href="http://" target="_self">
-                        <img src="./_imagens/guincho.png" alt="seleção serviço de guincho" id="img-guincho"></a>
-                        <button class="btn btn-search">Guinchos</button>
+                <div id="sec-winch">
+                    <img src="./_imagens/guincho.png" alt="seleção serviço de guincho" id="img-guincho">
+                    <div class="service-show-winch showOpt d-none">
+                        <ul class="list-group list-unstyled rounded rounded-3 text-center"
+                            style="background-color:burlywood;">
+                            <li>Retirada Resiudos</li>
+                            <li>Fretes</li>
+                            <li>Mudanças</li>
+                            <li>Terceirizados</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-search">Guinchos</button>
                 </div>
 
-                
-
-
-                <div>
-                    <a class="mx-lg-auto" href="http://" target="_self">
-                        <img src="_imagens/caminhão.png" alt="seleção serviço de transporte de carga"
-                            id="img-caminhao"></a>
-                        <button class="btn btn-search">Caminhão</button>
+                <div id="sec-truck">
+                    <img src="_imagens/caminhão.png" alt="seleção serviço de transporte de carga" id="img-caminhao">
+                    <div class="service-show-truck showOpt d-none">
+                        <ul class="list-group list-unstyled rounded rounded-3 text-center"
+                            style="background-color:burlywood;">
+                            <li>Retirada Resiudos</li>
+                            <li>Fretes</li>
+                            <li>Mudanças</li>
+                            <li>Terceirizados</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-search">Caminhão</button>
                 </div>
-                
             </div>
         </section>
 
@@ -114,11 +123,13 @@
                         <li><a href="">Embu</a> </li>
                         <li><a href="">Embu-Guaçu</a></li>
                         <li><a href="">Ferraz de Vasconcelos</a></li>
-                        
                     </ul>
                 </div>
                 <div>
-                    <img src="../Site Marcio Guinchos & Transportes/_imagens/mapa-sp.png">
+                    <picture>
+                        <source media="(max-width:1155px)" srcset="./_imagens/mapa-sp-446px.png">
+                        <img src="./_imagens/mapa-sp.png">
+                    </picture>
                 </div>
                 <div class="list-group container-fluid p-0">
                     <ul id="list-2">
@@ -140,11 +151,11 @@
                 </div>
             </div>
 
-                <div id="btn-region">
-                    <a href="../Site Marcio Guinchos & Transportes/pagina-regioes.html">
-                        <button class="btn btn-search">VER TODAS AS REGIÕES</button>
-                    </a>
-                </div>
+            <div id="btn-region">
+                <a href="./pagina-regioes.html">
+                    <button class="btn btn-search">VER TODAS AS REGIÕES</button>
+                </a>
+            </div>
 
         </section>
 
@@ -158,21 +169,21 @@
                 <h1>Marcio Guinchos & Transportes</h1>
                 <p>Nós trabalhamos com foco total, nossos veículos estão sempre revisados para poder atender nossos
                     clientes com 100% de segurança. Apenas um clique para ter contato conosco via WhatsApp ou Chamada.
-                    Também fique por dentro de nossas redes sociais.</p>
+                </p>
 
                 <p>Nossa equipe está sempre pronta para atender 24 horas por dia e 7 dias da semana, incluindo feriados.
                     Temos uma frota com veículos preparados para socorrer em qualquer situação e em quaisquer
                     circunstâncias e por isso, atendemos o mais rápido possível.</p>
             </div>
-            <div class="container-fluid">
+            <div id="sec-slider" class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-11">
                         <div class="featured-carousel owl-carousel">
                             <div class="item">
                                 <div class="testimony-wrap d-flex">
                                     <div class="user-img" style="background-image: url(images/person_1.jpg)">
                                     </div>
-                                    <div class="text pl-5">
+                                    <div class="text pl-4">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="ion-ios-quote"></i>
                                         </span>
@@ -185,15 +196,14 @@
                             </div>
                             <div class="item">
                                 <div class="testimony-wrap d-flex">
-                                    <div class="user-img" style="background-image: url(images/person_2.jpg)">
+                                    <div class="user-img" style="background-image: url(sliders/foto.jpg)">
                                     </div>
-                                    <div class="text pl-4">
+                                    <div class="text pl-3">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="ion-ios-quote"></i>
                                         </span>
-                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                            Consonantia, there live the blind texts.</p>
-                                        <p class="name">Henry Dee</p>
+                                        <p>Preço bom e rápido no atendimento.</p>
+                                        <p class="name">Victor Hugo</p>
                                         <span class="position">Businesswoman</span>
                                     </div>
                                 </div>
@@ -202,7 +212,7 @@
                                 <div class="testimony-wrap d-flex">
                                     <div class="user-img" style="background-image: url(images/person_2.jpg)">
                                     </div>
-                                    <div class="text pl-4">
+                                    <div class="text pl-3">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="ion-ios-quote"></i>
                                         </span>
@@ -217,7 +227,7 @@
                                 <div class="testimony-wrap d-flex">
                                     <div class="user-img" style="background-image: url(images/person_3.jpg)">
                                     </div>
-                                    <div class="text pl-4">
+                                    <div class="text pl-3">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="ion-ios-quote"></i>
                                         </span>
@@ -232,7 +242,7 @@
                                 <div class="testimony-wrap d-flex">
                                     <div class="user-img" style="background-image: url(images/person_4.jpg)">
                                     </div>
-                                    <div class="text pl-4">
+                                    <div class="text pl-3">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="ion-ios-quote"></i>
                                         </span>
@@ -247,7 +257,7 @@
                                 <div class="testimony-wrap d-flex">
                                     <div class="user-img" style="background-image: url(images/person_5.jpg)">
                                     </div>
-                                    <div class="text pl-4">
+                                    <div class="text pl-3">
                                         <span class="quote d-flex align-items-center justify-content-center">
                                             <i class="ion-ios-quote"></i>
                                         </span>
@@ -270,34 +280,28 @@
             <div class="galeria-fotos">
 
                 <div class="item-galeria">
-                    <img class="img-galeria img-thumbnail"
-                        src="../Site Marcio Guinchos & Transportes/galeria-fotos/foto-2.png" alt="">
+                    <img class="img-galeria img-thumbnail" src="./galeria-fotos/foto-2.png" alt="">
                 </div>
                 <div class="item-galeria">
-                    <img class="img-galeria img-thumbnail"
-                        src="../Site Marcio Guinchos & Transportes/galeria-fotos/foto-3.png" alt="">
+                    <img class="img-galeria img-thumbnail" src="./galeria-fotos/foto-3.png" alt="">
                 </div>
                 <div class="item-galeria">
-                    <img class="img-galeria img-thumbnail"
-                        src="../Site Marcio Guinchos & Transportes/galeria-fotos/foto-1.png" alt="">
+                    <img class="img-galeria img-thumbnail" src="./galeria-fotos/foto-1.png" alt="">
                 </div>
                 <div class="item-galeria">
-                    <img class="img-galeria img-thumbnail"
-                        src="../Site Marcio Guinchos & Transportes/galeria-fotos/foto-6.png" alt="">
+                    <img class="img-galeria img-thumbnail" src="./galeria-fotos/foto-6.png" alt="">
                 </div>
                 <div class="item-galeria">
-                    <img class="img-galeria img-thumbnail"
-                        src="../Site Marcio Guinchos & Transportes/galeria-fotos/foto-7.png" alt="">
+                    <img class="img-galeria img-thumbnail" src="./galeria-fotos/foto-7.png" alt="">
                 </div>
                 <div class="item-galeria">
-                    <img class="img-galeria img-thumbnail"
-                        src="../Site Marcio Guinchos & Transportes/galeria-fotos/foto-8.png" alt="">
+                    <img class="img-galeria img-thumbnail" src="./galeria-fotos/foto-8.png" alt="">
                 </div>
             </div>
 
             <div id="btn-sec-fotos" class="mx-auto">
-                <a href="../Site Marcio Guinchos & Transportes/pagina-fotos.html"><button
-                        class="btn btn-outline-primary p-4 rounded-pill">VER FOTOS</button></a>
+                <a href="./pagina-fotos.html"><button class="btn btn-outline-primary p-4 rounded-pill">VER
+                        FOTOS</button></a>
             </div>
 
         </section>
@@ -309,7 +313,8 @@
                     <p>Email: marcio.dominguez@hotmail.com</p>
                     <p>Email: jwwexpressltda@gmail.com.br</p>
                     <p>WhatsApp: (11) 97118-1829</p>
-                    <p>Normas e expecificações sobre serviços <a href="http://">link</a></p>
+                    <p>Veja alguns de nossos serviços <a href="./pagina-servicos.html">
+                            <i class="fa-solid fa-circle-arrow-right"></i></a></p>
                 </div>
                 <div id="fale-conosco-info-2" class="fale-conosco-div-ib">
                     <h4>ALGUM DE NOSSOS SERVIÇOS</h4>
@@ -327,16 +332,20 @@
                     alt="forma de pagamento, bandeiras dos cartões">
             </div>
             <div id='fale-conosco-img'>
-                <a href="http://https://www.instagram.com/benedictotavio/" target="_blank" rel="noopener noreferrer"
-                    id="logo-insta"><img class=" img-fluid" src="_imagens/instagram-logo.png" alt="Logo Instragram"></a>
-
-                <a href="http://https://www.facebook.com/otavio.benedicto.9" target="_blank" rel="noopener noreferrer"
-                    id="logo-face"><img <img class=" img-fluid" src="_imagens/logo-facebook.png"
-                        alt="Logo Facebook"></a>
-
-                <a href="http://https://www.youtube.com/channel/UC36LiZkxLo7dmRm5QMOSIRQ" target="_blank"
-                    rel="noopener noreferrer" id="logo-youtube"><img <img class=" img-fluid"
-                        src="_imagens/youtube-logo.png" alt="Logo Youtube"></a>
+                <a href="https://www.facebook.com/otavio.benedicto.9" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/benedictotavio/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC36LiZkxLo7dmRm5QMOSIRQ" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.google.com/search?q=marcio+guinchos&rlz=1C1FCXM_pt-PTBR1001BR1001&oq=marcio+guinchos&aqs=chrome..69i57j0i10i22i30.5247j0j7&sourceid=chrome&ie=UTF-8"
+                    target="_blank">
+                    <i class="fa-brands fa-google"></i>
+                </a>
             </div>
         </section>
 
@@ -347,14 +356,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="../Site Marcio Guinchos & Transportes/js/codigo-pagina-principal.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('button.col-11').click(function () {
-                $('div#area-btn-zone').toggleClass('d-none')
-            });
-        });
-    </script>
+    <script src="./js/codigo-pagina-principal.js"></script>
 </body>
 
 </html>

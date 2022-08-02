@@ -5,30 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Site Marcio Guinchos & Transportes//css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../Site Marcio Guinchos & Transportes/css/estilo-pagina-servicos.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/estilo-pagina-servicos.css">
     <title>Formulario de Serviços</title>
 
 <body>
+    <!--  CABEÇALHO    -->
+
     <header id="header">
         <div class="container-head">
 
             <div class="div-menu">
                 <nav>
-                    <a href="../Site Marcio Guinchos & Transportes/pagina-principal.html" id="logo-jww"><img
-                            src="./_imagens/logo-guinchos&transportes.png" alt="logo de uma empresa de guincho"></a>
+                    <a href="./pagina-principal.html" id="logo-jww"><img src="./_imagens/logo-guinchos&transportes.png"
+                            alt="logo de uma empresa de guincho"></a>
                     <div class="mobile-menu">
                         <div class="line1"></div>
                         <div class="line2"></div>
                         <div class="line3"></div>
                     </div>
                     <ul class="menu-superior">
-                        <li><a class="links text-dark" href="#sec-servico">Serviços</a></li>
-                        <li><a class="links"
-                                href="../Site Marcio Guinchos & Transportes/pagina-regioes.html">Regiões</a></li>
-                        <li><a class="links" href="../Site Marcio Guinchos & Transportes/pagina-fotos.html">Fotos</a>
-                        </li>
-                        <li><a class="links" href="#fale-conosco">Fale Conosco</a></li>
+                        <li><a class="links" href="#sec-servico">Serviços</a></li>
+                        <li><a class="links" href="./pagina-regioes.html">Regiões</a></li>
+                        <li><a class="links" href="./pagina-fotos.html">Fotos</a></li>
+                        <li><a class="links" href="./pagina-formulario.html">Fale Conosco</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,19 +37,24 @@
     </header>
 
 
+
     <!--  HOME  -->
 
     <main>
         <div id="home-input">
+            <input type="search" name="buscar-servico" id="metodo-busca" placeholder="Pesquisar..."><button
+                class=" btn btn-search">Buscar</button>
             <h1>Serviços de Guinchos e Transportes</h1>
             <h2>24 Horas | 7 Dias por Semana</h2>
             <p><strong>Veiculos a pronto atendimento.</strong></p>
 
             <!--     Botão WPP     -->
 
-            <a href="http://wa.me/5511971181829" target="_blank" rel="noopener noreferrer" id="botao-wpp"><img
-                    src="_imagens/wpp-logo.png" alt="Marca para Contato WhatsApp"><input type="button"
-                    value="Solicite seu Orçamento" id="botao-wpp-solicite"></a>
+            <button id="btn-wpp" style="width:50vh;height:10vh;">
+                <a href="http://wa.me/5511971181829" target="_blank" rel="noopener noreferrer" style="color:aliceblue;">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 1.6em;"></i>&nbsp;&nbsp;Solicite seu
+                    Orçamento</a>
+            </button>
         </div>
 
         <!-- INTRODUÇÃO -->
@@ -130,11 +136,7 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
-
-
         <!-- Fale Conosco -->
         <section id="fale-conosco">
             <h1>CONTATO</h1>
@@ -178,7 +180,7 @@
     <footer>
         <h4> Marcio Guinchos & Transportes - &copy;All Rights Reserved</h4>
     </footer>
-    <script src="../Site Marcio Guinchos & Transportes/js/pagina-servicos.js"></script>
+    <script src="./js/pagina-servicos.js"></script>
 </body>
 
 </html>

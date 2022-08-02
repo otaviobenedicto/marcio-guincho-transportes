@@ -55,3 +55,32 @@ window.addEventListener("scroll", () => {
     lastScrollY = window.scrollY
 });
 
+// Enviar E-Mail
+function SendEmail(e) {
+    var params = {
+        to_name: 'Marcio Domingues',
+        from_name: document.getElementById('name-form').value,
+        service: document.getElementById('service-form').value,
+        email_id: document.getElementById('email_id').value,
+        tel: document.getElementById('tel').value,
+        message: document.getElementById('message').value,
+        reply_to: 'marcio.dominguez@hotmail.com'
+    }
+    console.log(params.email_id)
+    if (params.email_id != '' || params.from_name != '' || params.tel != '') {
+        console.log(params.tel)
+        emailjs.send("service_lfgrifr", "template_8itnpoc", params).then(function (response) {
+            window.alert('SUCCESS!', response.status);
+        }, function (error) {
+            window.alert('FAILED...', error)
+        });
+    }else{
+        window.alert('Digite os campos obrigatórios...')
+    }
+}
+$('button#send').click(function (e) {
+    e.preventDefault();
+    SendEmail()
+});
+
+

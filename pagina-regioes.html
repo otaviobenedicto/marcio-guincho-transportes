@@ -6,20 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcio Guinchos & Transportes</title>
-    <link rel="stylesheet" href="css/estilo-regioes.css">
-    <link rel="stylesheet" href="../Site Marcio Guinchos & Transportes/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/estilo-regioes.css">
+    <link rel="shortcut icon" href="./_imagens/favicon_io/favicon-16x16.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
+    <!--  CABEÇALHO    -->
 
     <header id="header">
         <div class="container-head">
             <div class="div-menu">
                 <nav>
-                    <a href="../Site Marcio Guinchos & Transportes/pagina-principal.html" id="logo-jww"><img
-                        src="./_imagens/logo-guinchos&transportes.png" alt="logo de uma empresa de guincho"></a>
+                    <a href="./pagina-principal.html" id="logo-jww">
+                        <picture>
+                            <source media="(max-width:650px)" srcset="_imagens/logo-guinchos&transportes-132px.png">
+                            <source media="(max-width:455px)" srcset="_imagens/logo-guinchos&transportes-99px.png">
+                            <img src="./_imagens/logo-guinchos&transportes.png" alt="logo de uma empresa de guincho">
+                        </picture>
+                    </a>
                     <div class="mobile-menu">
                         <div class="line1"></div>
                         <div class="line2"></div>
@@ -27,13 +34,9 @@
                     </div>
                     <ul class="menu-superior">
                         <li><a class="links" href="./pagina-servicos.html">Serviços</a></li>
-                        <li><a class="links text-dark" href="#">Regiões</a></li>
-                        <li><a class="links"
-                                href="../Site Marcio Guinchos & Transportes/pagina-fotos.html">Fotos</a>
-                        </li>
-                        <li><a class="links"
-                                href="../Site Marcio Guinchos & Transportes/pagina-formulario.html">Fale
-                                Conosco</a></li>
+                        <li><a class="links" href="#sec-region">Regiões</a></li>
+                        <li><a class="links" href="./pagina-fotos.html">Fotos</a></li>
+                        <li><a class="links" href="./pagina-formulario.html">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,35 +45,24 @@
 
     <!--  HOME  -->
 
-    <div id="home-input">
-        <h1>Serviços de Guinchos e Transportes</h1>
-        <h2>24 Horas | 7 Dias por Semana</h2>
-        <p><strong>Veiculos a pronto atendimento.</strong></p>
-
-        <!--     Botão WPP     -->
-
-        <a href="http://wa.me/5511971181829" target="_blank" rel="noopener noreferrer" id="botao-wpp"><img
-                src="_imagens/wpp-logo.png" alt="Marca para Contato WhatsApp"><input type="button"
-                value="Solicite seu Orçamento" id="botao-wpp-solicite"></a>
-    </div>
-
-    <!-- INTRODUÇÃO -->
-
-    <section id="sec-contato">
-        <div class="container">
-            <div class="row p-2">
-                <div class="header_contact col-md-3">
-                    <small class="header"><span style="color:rgb(16, 104, 158)" class="h6">Marcio Guinchos &
-                        Transportes</span></small>
-                    <h2>Regiões Atendidas</h2>
-                </div>
-                <div class="conteudo col-md-8">A TOM GUINCHOS é uma empresa especializada em auto socorro, contamos com caminhões equipados, periodicamente revisados o que garante um serviço de qualidade e segurança 24 horas por dia.
-                    <br/>
-                    <br/>
-                    Atuamos em todas as regiões de São Paulo, Grande São Paulo, Taboão da Serra, Litoral e Interior.</div>
+    <main>
+        <div id="home-input">
+            <div class=" d-flex justify-content-center">
+                <input type="search" name="buscar-servico" id="metodo-busca" placeholder="Pesquisar..."><button
+                class=" btn btn-search">Buscar</button>
             </div>
+            <h1>Serviços de Guinchos e Transportes</h1>
+            <h2>24 Horas | 7 Dias por Semana</h2>
+            <p><strong>Veiculos a pronto atendimento.</strong></p>
+
+            <!--     Botão WPP     -->
+
+            <button id="btn-wpp">
+                <a href="http://wa.me/5511971181829" target="_blank" rel="noopener noreferrer" style="color:aliceblue;">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 1.6em;"></i>&nbsp;&nbsp;Solicite seu
+                    Orçamento</a>
+            </button>
         </div>
-    </section>
 
     <!--Regiões-->
 
@@ -84,7 +76,7 @@
                     <div class="col-lg-3 col-sm-4 col-6 category-card border border-collapse">
                         <div class="card border-0">
                             <a class="d-block" href="#"><img class="img-galeria"
-                                    src="../Site Marcio Guinchos & Transportes/_regioes-img/foto-zl.png"
+                                    src="./_regioes-img/foto-zl.png"
                                     alt="Computers &amp; Accessories"></a>
                             <div class="card-body pb-2">
                                 <h2 class="h6 mb-2">Zona Leste</h2><span
@@ -143,7 +135,7 @@
                     <div class="col-lg-3 col-sm-4 col-6 category-card border border-collapse">
                         <div class="card border-0">
                             <a class="d-block" href="#"><img class="img-fluid"
-                                    src="../Site Marcio Guinchos & Transportes/_regioes-img/foto-zs.png"
+                                    src="./_regioes-img/foto-zs.png"
                                     alt="TV, Video &amp; Audio"></a>
                             <div class="card-body pb-2">
                                 <h2 class="h6 mb-2">Zona Sul</h2><span
@@ -204,7 +196,7 @@
                     <div class="col-lg-3 col-sm-4 col-6 category-card border border-collapse">
                         <div class="card border-0">
                             <a class="d-block" href="#"><img class="img-fluid"
-                                    src="../Site Marcio Guinchos & Transportes/_regioes-img/foto-zn.png"
+                                    src="./_regioes-img/foto-zn.png"
                                     alt="Smartphones &amp; Tablets"></a>
                             <div class="card-body pb-2">
                                 <h2 class="h6 mb-2">Zona Norte</h2><span
@@ -264,7 +256,7 @@
                     <div class="col-lg-3 col-sm-4 col-6 category-card border border-collapse">
                         <div class="card border-0">
                             <a class="d-block" href="#"><img class="img-fluid"
-                                    src="../Site Marcio Guinchos & Transportes/_regioes-img/foto-zo.png"
+                                    src="./_regioes-img/foto-zo.jpg"
                                     alt="Cameras, Photo &amp; Videos"></a>
                             <div class="card-body pb-2">
                                 <h2 class="h6 mb-2">Zona Oeste</h2><span
@@ -323,7 +315,7 @@
                     <div class="col-lg-3 col-sm-4 col-6 category-card border border-collapse">
                         <div class="card border-0">
                             <a class="d-block" href="#"><img class="img-fluid"
-                                    src="../Site Marcio Guinchos & Transportes/_regioes-img/foto-baixada.jpg"
+                                    src="./_regioes-img/foto-baixada.jpg"
                                     alt="Headphones"></a>
                             <div class="card-body pb-2">
                                 <h2 class="h6 mb-2">Baixada Santista</h2><span
@@ -372,7 +364,7 @@
                     <div class="col-lg-3 col-sm-4 col-6 category-card border border-collapse">
                         <div class="card border-0">
                             <a class="d-block" href="#"><img class="img-fluid"
-                                    src="../Site Marcio Guinchos & Transportes/_regioes-img/foto-valeparaiba.png"
+                                    src="./_regioes-img/foto-valeparaiba.png"
                                     alt="Wearable Electronics"></a>
                             <div class="card-body pb-2">
                                 <h2 class="h6 mb-2">Vale do Paraíba</h2><span
@@ -417,7 +409,7 @@
                     <div class="col-lg-3 col-sm-4 col-6 category-card border border-collapse">
                         <div class="card border-0">
                             <a class="d-block" href="#"><img class="img-fluid"
-                                    src="../Site Marcio Guinchos & Transportes/_regioes-img/foto-abc.png"
+                                    src="./_regioes-img/foto-abc.png"
                                     alt="Printers &amp; Ink"></a>
                             <div class="card-body pb-2">
                                 <h2 class="h6 mb-2">ABC</h2><span class="d-block mb-3 font-size-xs text-muted">Região
@@ -473,7 +465,7 @@
                     <div class="col-lg-3 col-sm-4 col-6 category-card border border-collapse">
                         <div class="card border-0">
                             <a class="d-block" href="#"><img class="img-fluid"
-                                    src="../Site Marcio Guinchos & Transportes/_regioes-img/foto-interior.png"
+                                    src="./_regioes-img/foto-interior.png"
                                     alt="Video Games"></a>
                             <div class="card-body pb-2">
                                 <h2 class="h6 mb-2">Interior</h2>
@@ -539,7 +531,8 @@
                 <p>Email: marcio.dominguez@hotmail.com</p>
                 <p>Email: jwwexpressltda@gmail.com.br</p>
                 <p>WhatsApp: (11) 97118-1829</p>
-                <p>Normas e expecificações sobre serviços <a href="http://">link</a></p>
+                <p>Veja alguns de nossos serviços <a href="./pagina-servicos.html">
+                        <i class="fa-solid fa-circle-arrow-right"></i></a></p>
             </div>
             <div id="fale-conosco-info-2" class="fale-conosco-div-ib">
                 <h4>ALGUM DE NOSSOS SERVIÇOS</h4>
@@ -557,21 +550,21 @@
                 alt="forma de pagamento, bandeiras dos cartões">
         </div>
         <div id='fale-conosco-img'>
-            <a href="http://https://www.instagram.com/benedictotavio/" target="_blank" rel="noopener noreferrer"
-                id="logo-insta"><img class=" img-fluid" src="_imagens/instagram-logo.png" alt="Logo Instragram"></a>
+            <a href="http://www.instagram.com/benedictotavio/" target="_blank" rel="noopener noreferrer"
+                id="logo-insta"><i class="fa-brands fa-instagram" style="font-size: 1.15em;color:#055485;"></i></a>
 
-            <a href="http://https://www.facebook.com/otavio.benedicto.9" target="_blank" rel="noopener noreferrer"
-                id="logo-face"><img <img class=" img-fluid" src="_imagens/logo-facebook.png" alt="Logo Facebook"></a>
+            <a href="http://www.facebook.com/otavio.benedicto.9" target="_blank" rel="noopener noreferrer"
+                id="logo-face"><i class="fa-brands fa-facebook" style="font-size: 1.15em;color: #164F73;"></i></a>
 
-            <a href="http://https://www.youtube.com/channel/UC36LiZkxLo7dmRm5QMOSIRQ" target="_blank"
-                rel="noopener noreferrer" id="logo-youtube"><img <img class=" img-fluid" src="_imagens/youtube-logo.png"
-                    alt="Logo Youtube"></a>
+            <a href="http://www.youtube.com/channel/UC36LiZkxLo7dmRm5QMOSIRQ" target="_blank"
+                rel="noopener noreferrer" id="logo-youtube"><i class="fa-brands fa-youtube"
+                    style="font-size: 1.15em;color: #1d4352;"></i></a>
         </div>
     </section>
     
     <footer class=" h-100">
         <h4> Marcio Guinchos & Transportes - &copy;All Rights Reserved</h4>
     </footer>
-    <script src="../Site Marcio Guinchos & Transportes/js/codigo-fotos.js"></script>
+    <script src="./js/codigo-fotos.js"></script>
 </body>
 </html>
